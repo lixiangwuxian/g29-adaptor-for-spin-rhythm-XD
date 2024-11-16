@@ -149,9 +149,8 @@ try:
 
         # 提交更新到虚拟手柄
         gamepad.update()
-
-        # 限制循环频率，模拟 240fps
-        time.sleep()
+        
+        time.sleep(1/2400)
 
 except KeyboardInterrupt:
     print("程序已退出。")
