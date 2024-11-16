@@ -4,9 +4,12 @@ Write with gpt-4o.
 
 ## How to use
 
+Install ViGEmBus from <https://github.com/ViGEm/ViGEmBus/releases>
+
 ```shell
 pip install PySDL2
 pip install pysdl2-dll
+pip install vgamepad
 python3 g29_to_xbox_controller.py
 ```
 

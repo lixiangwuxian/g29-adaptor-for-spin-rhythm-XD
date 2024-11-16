@@ -1,5 +1,6 @@
 #  pip install PySDL2
 #  pip install pysdl2-dll
+#  pip install vgamepad
 import sdl2
 import sdl2.ext
 import vgamepad as vg
