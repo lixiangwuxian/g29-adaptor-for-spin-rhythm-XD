@@ -105,8 +105,8 @@ try:
             # 获取方向盘的 X 轴输入
             if not block_wheel_input and event.type == sdl2.SDL_JOYAXISMOTION:
 
+                axis_index = event.jaxis.axis
                 if axis_index == 0:  # 假设轴 0 是方向盘的主要输入轴
-                    axis_index = event.jaxis.axis
                     axis_value = event.jaxis.value / 32767.0  # 将轴值归一化为 [-1, 1]
                     degrees = axis_value * MAX_DEGREES  # 将输入范围 [-1, 1] 映射到 [-450, 450]
 
@@ -149,7 +149,7 @@ try:
 
         # 提交更新到虚拟手柄
         gamepad.update()
-        
+
         time.sleep(1/2400)
 
 except KeyboardInterrupt:
